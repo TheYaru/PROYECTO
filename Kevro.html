@@ -119,6 +119,22 @@
       </div>
     </section>
   </main>
+
+    <form action="procesar_compra.php" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+  
+      <label for="direccion">Dirección:</label>
+      <textarea id="direccion" name="direccion" required></textarea>
+  
+     <label for="metodo_pago">Método de pago:</label>
+      <select id="metodo_pago" name="metodo_pago" required>
+        <option value="tarjeta">Tarjeta de crédito</option>
+        <option value="paypal">PayPal</option>
+     </select>
+  
+    <button type="submit">Comprar disco de Kendrick Lamar ("DAMN")</button>
+  </form>
   
 
   <footer>
