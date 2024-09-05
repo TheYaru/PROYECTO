@@ -1,22 +1,23 @@
+/* Estilos Globales */
 body {
-  background-color:#26282d;
+  background-color: #26282d;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-/* Estilos para la página principal */
-body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  color: #ffffff;
 }
 
+/* Estilos para el Header */
 header {
   background-color: #000000;
   color: #b1ffc7;
   padding: 30px;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 1000;
 }
 
 .profile-picture {
@@ -33,75 +34,11 @@ header {
   object-fit: cover;
 }
 
-
 .header-content {
   position: relative;
+  cursor: pointer;
 }
 
-
-#menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #333;
-  padding: 10px;
-}
-
-#menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-#menu ul li {
-  margin-bottom: 5px;
-}
-
-#menu ul li a {
-  color: #b1ffc7;
-  text-decoration: none;
-}
-
-main {
-  padding: 35px;
-}
-
-section {
-  margin-bottom: 50px;
-  color: #ffffff;
-}
-
-h2 {
-  color: #b1ffc7;
-}
-
-/* Estilos para el menú desplegable */
-#menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 10;
-  background-color: #333;
-  padding: 15px;
-}
-
-#menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 10;
-}
-
-#menu ul li {
-  margin-bottom: 15px;
-}
-
-#menu ul li a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-/* Estilos para la reacción al hacer clic en "Kendrick Lamar" */
 #menu-toggle.active {
   color: #333;
   font-weight: bold;
@@ -115,7 +52,7 @@ h2 {
   border-right: 2px solid #fff;
   transform: rotate(45deg);
   margin-left: 8px;
-  transition: transform 0.3s ease;
+  transition: transform 0.7s ease;
 }
 
 #menu-toggle.active #menu-indicator {
@@ -135,77 +72,189 @@ h2 {
 #menu-toggle span:first-child {
   margin-right: 8px; 
 }
+/* Estilos para el Main */
+main {
+  padding: 35px;
+}
 
-/* Estilos para las listas de reproducción */
-.playlist {
+section {
+  margin-bottom: 50px;
+}
+
+section h2 {
+  color: #b1ffc7;
+  font-size: 28px;
   margin-bottom: 20px;
-  background-image: url('https://th.bing.com/th/id/OIP.02BMaq4yz1KfpvH-1fwCBwHaHa?w=211&h=211&c=7&r=0&o=5&dpr=1.3&pid=1.7');
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-right: 220px; 
+  border-bottom: 2px solid #b1ffc7;
+  padding-bottom: 10px;
+}
+
+section p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Estilos para las Playlists */
+.playlist {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .playlist h3 {
-  color: #ffffff;
+  color: #b1ffc7;
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
-/* Estilos para las canciones */
-.song {
-  margin-bottom: 10px;
-  color: #ffffff;
-}
-
-.song h3 {
-  color: #ffffff;
-}
-
-/* Estilos para marquita*/
-footer p {
-  color:#ffffff;
+.playlist ul {
+  list-style-type: disc;
   margin-left: 20px;
 }
 
-form {
-  width: 400px; /* Ancho del formulario */
-  margin: 0 auto; /* Centrar el formulario horizontalmente */
+.playlist ul li {
+  margin-bottom: 10px;
+}
+
+.playlist ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.playlist ul li a:hover {
+  color: #00ff99;
+  text-decoration: underline;
+}
+
+/* Estilos para las Canciones */
+.song {
+  margin-bottom: 30px;
   padding: 20px;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
 
-label {
-  display: block;
-  margin-bottom: 10px;
+.song h3 {
+  color: #b1ffc7;
+  font-size: 22px;
+  margin-bottom: 15px;
 }
 
-input,
-textarea,
-select {
+.song audio {
   width: 100%;
-  padding: 5px;
-  margin-bottom: 10px;
+  outline: none;
 }
 
-button[type="submit"] {
-  background-color: #b1ffc7;
-  color: rgb(0, 0, 0);
-  padding: 10px 20px;
+/* Estilos para el Formulario */
+.container {
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  padding: 30px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.container h2 {
+  color: #b1ffc7;
+  font-size: 26px;
+  margin-bottom: 25px;
+  text-align: center;
+  border-bottom: 2px solid #b1ffc7;
+  padding-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: #b1ffc7;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #26282d;
+  border: 2px solid #444444;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #00ff99;
+  outline: none;
+}
+
+.form-group input[type="submit"] {
+  background-color: #00ff99;
+  color: #000000;
   border: none;
   cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-button[type="submit"]:hover {
-  background-color: #45a049;
+.form-group input[type="submit"]:hover {
+  background-color: #00cc77;
 }
 
-/* Estilos para los enlaces */
+/* Estilos para el Footer */
+footer {
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  color: #b1ffc7;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Estilos para Enlaces Generales */
 a {
   color: #b1ffc7;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
+  color: #00ff99;
   text-decoration: underline;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-picture {
+    margin-bottom: 15px;
+  }
+
+  .playlist,
+  .song,
+  .container {
+    padding: 20px;
+  }
 }
